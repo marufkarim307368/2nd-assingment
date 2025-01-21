@@ -1,0 +1,257 @@
+.header-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 50px;
+} 
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    gap: 60px; 
+} 
+.nav-link { 
+    text-decoration: none; 
+    /* color: black;  */
+} 
+.button { 
+    padding: 10px 20px; 
+    background-color: #FEA301;
+    padding: 10px 50px; 
+    border-radius: 12px;
+    color: white; 
+    border: none;  
+    margin-right: 50px;
+} 
+.header-style h2 { 
+    margin: 0; 
+}
+
+.display-flex{
+    display: flex;
+}
+.aling{
+    align-items: center;
+}
+
+.nav-link.home { 
+    color: #FEA301; 
+} 
+.nav-link.about { 
+    color: #01ACFD; 
+} 
+.nav-link.facilities { 
+    color: #05D4DF; 
+} 
+.nav-link.admission { 
+    color: #5D58EF; 
+}
+
+.nav-link { 
+    text-decoration: none; 
+    font-size: 18px;
+}
+.menubar{
+    width: 50px;
+    height: auto;
+    display: none;
+}
+
+/* shared style */
+.bg-img{
+    width: 100%;
+    height: auto;
+}
+
+.orange{
+    color: #FEA301;
+}
+.blue{
+    color: #01ACFD;
+}
+
+/* navbar 2nd design */
+
+.navbar-father{
+    width: 900px;
+    height: 331px;
+}
+
+.navbar-grandfather{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.navbar-h2{
+    margin-bottom: 20px;
+}
+
+.navbar-discription{
+    /* font-size: 1.25rem; */
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 1.25rem;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.hero-img{
+    width: 350px;
+    height: 480px;
+}
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .btn-enroll{
+    font-size: 1.25rem;
+    padding: 7px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+  }
+/* card design */
+.standard-curriculum{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 60px;
+    gap: -80px;
+    margin-top: 120px;
+}
+.card-1{
+    width: 300px;
+    height: 380px;
+    padding: 20px;
+    background: linear-gradient(#DEF5FF,white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-2{
+    width: 300px;
+    height: 380px;
+    padding: 20px;
+    background: linear-gradient(#FFF4DC,white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-3{
+    width: 300px;
+    height: 380px;
+    padding: 20px;
+    background: linear-gradient(#F2E8FF,white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Curriculum-card{
+    background-image: url('/assets/bg.png');
+    width: 100%;
+}
+.Standard-cur{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.kinder-1{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+.kinder-1-discription{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    width: 260px;
+    height: 70px;
+    color: #808080;
+    text-align: center;
+}
+.read-more{
+    color: #64C8FF;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+}
+.read-more-2{
+    color: #F0AA00;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+}
+.read-more-3{
+    color: #8700FF;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+}
+/* media query */
+@media screen and (max-width: 576px) {
+    .nav-links{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .header-style h2{
+        display: none;
+        /* padding-bottom: 10px; */
+    }
+    .header-container{
+        margin: auto;
+    }
+    .menubar{
+        display: block;
+    }
+    /* nav 2nd */
+    .navbar-grandfather { 
+        flex-direction: column;
+        margin-right: 50px; 
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .hero-img { 
+        order: -1;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .navbar-father { 
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-h2{
+        font-size: 2rem;
+        /* width: 500px; */
+        overflow: hidden;
+    }
+    .navbar-discription{
+        font-size: 14px;
+    }
+}
